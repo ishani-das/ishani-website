@@ -19,6 +19,10 @@ function Main() {
           </div>
           <h1>Ishani Das</h1>
           <p>CS @ University of Michigan</p>
+          <a href="/pdfs/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <u><em>Resume</em></u>
+            {/* <em>Resume</em> */}
+          </a>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/ishani-das" target="_blank" rel="noreferrer"><GitHubIcon/></a>

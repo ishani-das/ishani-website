@@ -10,7 +10,27 @@ import bg4 from '../assets/images/bg4.png';
 import proj from '../assets/images/proj.png';
 
 import '../assets/styles/Project.scss';
+import Chip from '@mui/material/Chip';
 // https://youtu.be/Uz-b2Ls32kY?si=mRzokAxUuQw-ROjA&t=13
+
+const labels_IV = [
+    "React", "JavaScript", "Python", "Vercel", "Heroku", "Grok", "Google Programmable Search Engine"
+];
+const labels_CH = [
+    "iOS", "Swift" 
+];
+const labels_VL = [
+    "Python", "ML", "DeepFace", "Jupyter Notebook"
+];
+const labels_CDST = [
+    "Python", "ML", "Bioinformatics", "AWS Cloud", "PyWebIO" 
+];
+const labels_DR = [
+    "Python", "Stastical Analysis", "GWAS", "Bioinformatics"
+];
+const labels_HN = [
+    "C", "Arduino", "GPS & GSM", "IoT"
+];
 
 function Project() {
     return (
@@ -32,13 +52,19 @@ function Project() {
                             allowFullScreen
                         ></iframe>
                     </div>
-                    <a href="https://www.youtube.com/embed/UlD8c3HF7kU?start=40" target="_blank" rel="noreferrer">
+                    <a href="https://informed-votr.vercel.app/" target="_blank" rel="noreferrer">
                         <h2>InformedVotr</h2>
                     </a>
                     <p>
                     A website to help people better understand complicated bills and laws using raw bill
                     data from Congress.
                     </p>
+                    <div className="flex-chips">
+                        <span className="chip-title"></span>
+                        {labels_IV.map((label, index) => (
+                            <Chip key={index} className='chip' label={label} />
+                        ))}
+                    </div>
                 </div>
 
                 <div className="project">
@@ -55,12 +81,19 @@ function Project() {
                             allowFullScreen
                         ></iframe>
                     </div>
-                    <a href="https://www.youtube.com/embed/qQ9xaqx5sBc" target="_blank" rel="noreferrer">
+                    {/* <a href="https://www.youtube.com/embed/qQ9xaqx5sBc" target="_blank" rel="noreferrer">
                         <h2>ComicHub</h2>
-                    </a>
+                    </a> */}
+                    <h2>ComicHub</h2>
                     <p>
                         An iOS app for people to read their favorite comics from their childhood from today or years ago. Updated daily.
                     </p>
+                    <div className="flex-chips">
+                        <span className="chip-title"></span>
+                        {labels_CH.map((label, index) => (
+                            <Chip key={index} className='chip' label={label} />
+                        ))}
+                    </div>
                 </div>
 
                 <div className="project"> 
@@ -77,12 +110,19 @@ function Project() {
                             allowFullScreen
                         ></iframe>
                     </div>
-                    <a href="https://www.youtube.com/embed/29_gSPR8jkg" target="_blank" rel="noreferrer">
+                    {/* <a href="https://www.youtube.com/embed/29_gSPR8jkg" target="_blank" rel="noreferrer">
                         <h2>AdaptiveVL</h2>
-                    </a>
+                    </a> */}
+                    <h2>AdaptiveVL</h2>
                     <p>
                         An AI-based facial emotion detection software tool to assist educators in creating an adaptive-learning environment to optimize learning in online school.
                     </p>
+                    <div className="flex-chips">
+                        <span className="chip-title"></span>
+                        {labels_VL.map((label, index) => (
+                            <Chip key={index} className='chip' label={label} />
+                        ))}
+                    </div>
                 </div>
 
                 <div className="project">
@@ -99,14 +139,21 @@ function Project() {
                             allowFullScreen
                         ></iframe>
                     </div>
-                    <a href="https://www.youtube.com/embed/UlD8c3HF7kU?start=40" target="_blank" rel="noreferrer">
+                    {/* <a href="https://www.youtube.com/embed/UlD8c3HF7kU?start=40" target="_blank" rel="noreferrer">
                         <h2>CDST: Clinical Decision Support Tool</h2>
-                    </a>
+                    </a> */}
+                    <h2>CDST: Clinical Decision Support Tool</h2>
                     <p>
                         A two-part AI-based decision support web application to assist physicians in the diagnosis process by:
                         (a) Mathematically determining the patients with the most similar medical history and displaying a summary of their
                         records. (b) Using ML to give a physician feedback on their diagnosis for a patient based on the uploaded medical records.
                     </p>
+                    <div className="flex-chips">
+                        <span className="chip-title"></span>
+                        {labels_CDST.map((label, index) => (
+                            <Chip key={index} className='chip' label={label} />
+                        ))}
+                    </div>
                 </div>
 
                 <div className="project">
@@ -123,7 +170,7 @@ function Project() {
                             allowFullScreen
                         ></iframe> */}
                     </div>
-                    <a href="https://www.youtube.com/embed/UlD8c3HF7kU?start=40" target="_blank" rel="noreferrer">
+                    <a href="https://doi.org/10.47611/jsrhs.v11i3.2951" target="_blank" rel="noreferrer">
                         <h2>Diabetic Retinopathy Research</h2>
                     </a>
                     <p>
@@ -132,6 +179,12 @@ function Project() {
                         may be correlated to the development of DR. 4/6 total SNPs shared common between DR and diastolic BP(p-value&lt;0.0001), 
                         were either mutations in or directly upstream of TULP4.
                     </p>
+                    <div className="flex-chips">
+                        <span className="chip-title"></span>
+                        {labels_DR.map((label, index) => (
+                            <Chip key={index} className='chip' label={label} />
+                        ))}
+                    </div>
                 </div>
 
                 <div className="project">
@@ -148,12 +201,19 @@ function Project() {
                             allowFullScreen
                         ></iframe>
                     </div>
-                    <a href="https://www.youtube.com/embed/Td0pZrtaX8U" target="_blank" rel="noreferrer">
+                    {/* <a href="https://www.youtube.com/embed/Td0pZrtaX8U" target="_blank" rel="noreferrer">
                         <h2>Third Eye + ReportNow</h2>
-                    </a>
+                    </a> */}
+                    <h2>Third Eye + ReportNow</h2>
                     <p>
                         An Arduino-based wearable device for the visually impaired to assist in navigation and easily seeking for realtime-help by sending an SMS with the current GPS location using GSM services.
                     </p>
+                    <div className="flex-chips">
+                        <span className="chip-title"></span>
+                        {labels_HN.map((label, index) => (
+                            <Chip key={index} className='chip' label={label} />
+                        ))}
+                    </div>
                 </div>
 
             </div>

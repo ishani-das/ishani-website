@@ -151,16 +151,10 @@ function Contact() {
             variant="contained"
             endIcon={<SendIcon />}
             href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
-            style={{
-              backgroundImage: 'url("../assets/images/aura.png")', // Ensure correct path
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              // backgroundColor: 'transparent', // Remove default background color
-              // color: '#fff',
-              // fontSize: '16px',
-              // padding: '10px 20px',
-              // borderRadius: '8px',
+            sx={{
+              backgroundColor: '#5000ca', // Custom background color
             }}
+
           >
             Send Email
           </Button> 
