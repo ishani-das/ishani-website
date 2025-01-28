@@ -115,12 +115,10 @@
 
 // export default Contact;
 
-
-
-import React from 'react';
-import '../assets/styles/Contact.scss';
-import Button from '@mui/material/Button';
-import SendIcon from '@mui/icons-material/Send';
+import React from "react";
+import "../assets/styles/Contact.scss";
+import Button from "@mui/material/Button";
+import SendIcon from "@mui/icons-material/Send";
 
 function Contact() {
   const email = "ishanid@umich.edu"; // Replace with your email
@@ -129,14 +127,14 @@ function Contact() {
 
   // ----------
   const buttonStyle = {
-    backgroundImage: 'url(../assets/images/aura.png)',  // Replace with your image URL
-    backgroundSize: 'cover',  // Ensures the image covers the button
-    backgroundPosition: 'center',  // Centers the image
-    border: 'none',  // Removes the default button border
-    padding: '10px 20px',  // Adds some padding inside the button
-    color: 'white',  // Sets text color
-    fontSize: '16px',  // Font size
-    cursor: 'pointer',  // Changes the cursor to pointer
+    backgroundImage: "url(../assets/images/aura.png)", // Replace with your image URL
+    backgroundSize: "cover", // Ensures the image covers the button
+    backgroundPosition: "center", // Centers the image
+    border: "none", // Removes the default button border
+    padding: "10px 20px", // Adds some padding inside the button
+    color: "white", // Sets text color
+    fontSize: "16px", // Font size
+    cursor: "pointer", // Changes the cursor to pointer
   };
 
   // ----------
@@ -150,15 +148,15 @@ function Contact() {
           <Button
             variant="contained"
             endIcon={<SendIcon />}
-            href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
+            href={`mailto:${email}?subject=${encodeURIComponent(
+              subject
+            )}&body=${encodeURIComponent(body)}`}
             sx={{
-              backgroundColor: '#5000ca', // Custom background color
+              backgroundColor: "#5000ca", // Custom background color
             }}
-
           >
             Send Email
-          </Button> 
-           
+          </Button>
         </div>
       </div>
     </div>

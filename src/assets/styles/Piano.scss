@@ -1,0 +1,52 @@
+// .slick-prev,
+// .slick-next {
+//     display: block !important;
+//     /* Ensure arrows are displayed */
+//     z-index: 2;
+//     font-size: 2rem;
+//     color: black;
+//     cursor: pointer;
+// }
+
+.custom-prev-arrow,
+.custom-next-arrow {
+    position: absolute;
+    top: 50%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+}
+
+.custom-prev-arrow {
+    left: -40px;
+    /* Adjust as needed */
+}
+
+.custom-next-arrow {
+    right: -40px;
+    /* Adjust as needed */
+}
+
+.custom-prev-arrow:hover,
+.custom-next-arrow:hover {
+    color: gray;
+    /* Hover effect */
+}
+
+.piano-container {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+    height: 100vh;
+    /* Full viewport height */
+    width: 100%;
+    /* Full width */
+}
+
+.piano_wrapper {
+    align-items: center;
+}
